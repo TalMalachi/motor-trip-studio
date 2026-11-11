@@ -1,0 +1,16 @@
+{
+  "name": "Motor Trip Studio",
+  "short_name": "Motor Trip",
+  "description": "כל היעדים. כל הטיולים. מקום אחד.",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d0c14",
+  "theme_color": "#101819",
+  "icons": [
+    {"src": "./icons/motor-trip.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+    {"src": "./icons/motor-trip-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable"}
+  ]
+}
