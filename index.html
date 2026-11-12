@@ -25,7 +25,7 @@
 window.addEventListener('error', event => {
   const view = document.getElementById('view');
   if (view && !view.textContent.trim()) {
-    view.innerHTML = '<section><h2>שגיאת טעינה</h2><p>האתר לא הצליח להפעיל את הממשק. נא לפתוח את קונסולת הדפדפן ולשלוח את השגיאה.</p><pre style="white-space:pre-wrap;direction:ltr;text-align:left">' + String(event.error?.stack || event.message || 'Unknown runtime error').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])) + '</pre></section>';
+    view.innerHTML = '<section><h2>שגיאת טעינה</h2><p>האתר לא הצליח להפעיל את הממשק.</p><pre style="white-space:pre-wrap;direction:ltr;text-align:left">' + String(event.error?.stack || event.message || 'Unknown runtime error') + '\nFile: ' + String(event.filename || '') + '\nLine: ' + String(event.lineno || '') + ', column: ' + String(event.colno || '') + '</pre></section>';
   }
 });
 window.addEventListener('unhandledrejection', event => {
@@ -35,7 +35,7 @@ window.addEventListener('unhandledrejection', event => {
   }
 });
 </script>
-<script type="module" src="./dist/app.js?v=repair-20261112-1"></script>
+<script type="module" src="./dist/app.js?v=complete-20261112-2"></script>
 <script>
 window.addEventListener('load', async () => {
   try {
