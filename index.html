@@ -11,30 +11,8 @@
 </head>
 <body>
 <a class="skip-link" href="#view">דלג לתוכן הראשי</a>
-<header class="site-header">
-<div class="brand"><div class="brand-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a4 4 0 0 1 0 8H9a4 4 0 0 0-4 4"/></svg></div><div><h1 translate="no">Motor Trip Studio</h1><p>כל היעדים. כל הטיולים. מקום אחד.</p></div></div>
-<span class="privacy-label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg>המרחב הפרטי שלך</span>
-</header>
-<div id="account"></div>
-<nav id="tabs" aria-label="ניווט ראשי"></nav>
-<div id="message" role="status" aria-live="polite" aria-atomic="true"></div>
-<main id="view" tabindex="-1"></main>
-<dialog id="editor" aria-label="עריכת פרטי הטיול"></dialog>
-<noscript>יש להפעיל JavaScript כדי להשתמש באפליקציה.</noscript>
-<script type="module" src="./dist/app.js?v=266126943345"></script>
-<script>
-window.addEventListener('load', async () => {
-  try {
-    if ('serviceWorker' in navigator) {
-      const registrations = await navigator.serviceWorker.getRegistrations();
-      await Promise.all(registrations.map(registration => registration.unregister()));
-    }
-    if ('caches' in window) {
-      const keys = await caches.keys();
-      await Promise.all(keys.map(key => caches.delete(key)));
-    }
-  } catch {}
-});
-</script>
-</body>
-</html>
+<header class="site-header"><div class="brand"><div class="brand-mark" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h6a4 4 0 0 1 0 8H9a4 4 0 0 0-4 4"/></svg></div><div><h1 translate="no">Motor Trip Studio</h1><p>כל היעדים. כל הטיולים. מקום אחד.</p></div></div><span class="privacy-label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3-3 5-6"/></svg>המרחב הפרטי שלך</span></header>
+<div id="account"></div><nav id="tabs" aria-label="ניווט ראשי"></nav><div id="message" role="status" aria-live="polite" aria-atomic="true"></div><main id="view" tabindex="-1"></main><dialog id="editor" aria-label="עריכת פרטי הטיול"></dialog><noscript>יש להפעיל JavaScript כדי להשתמש באפליקציה.</noscript>
+<script type="module" src="./dist/app.js?v=31d7a11e872f"></script>
+<script>window.addEventListener('load',async()=>{try{if('serviceWorker'in navigator){const registrations=await navigator.serviceWorker.getRegistrations();await Promise.all(registrations.map(registration=>registration.unregister()))}if('caches'in window){const keys=await caches.keys();await Promise.all(keys.map(key=>caches.delete(key)))}}catch{}});</script>
+</body></html>
